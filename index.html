@@ -9,7 +9,14 @@
     <script src="https://auth.magic.link/sdk"></script>
     <script>
       /* 2️⃣ Initialize Magic Instance */
-      let magic = new Magic("pk_live_D5EA1E346A791DB7");
+      const customNodeOptions = {
+
+  rpcUrl: 'https://json-rpc.evm.testnet.shimmer.network/', // Custom RPC URL
+
+  chainId: 1071, // Custom chain id
+
+}
+      let magic = new Magic("pk_live_208CC3B56E64A232");
 
       /* 3️⃣ Implement Render Function */
       const render = async () => {
