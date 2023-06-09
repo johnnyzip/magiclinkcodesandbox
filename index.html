@@ -16,7 +16,14 @@
   chainId: 1071, // Custom chain id
 
 }
-      let magic = new Magic("pk_live_208CC3B56E64A232");
+      let magic = new Magic("pk_live_208CC3B56E64A232"), {
+
+  network: customNodeOptions
+
+});
+
+
+const accounts = await magic.wallet.connectWithUI();;
 
       /* 3️⃣ Implement Render Function */
       const render = async () => {
